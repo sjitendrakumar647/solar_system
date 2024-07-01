@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solar System</title>
+    <style>
+        body
+        {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            overflow: hidden;
+            background-image: url(https://wallpaperaccess.com/full/4037643.jpg);
+        }
+        .container
+        {
+            width: 100vh;
+            height: 40em;
+            position: relative;
+        }
+        .sun
+        {
+            position: absolute;                     
+            top: 15em;
+            left: 15em;
+            width: 10em;
+            height: 10em;
+            background-color: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 7em white;
+            background-image: url(https://media.sciencephoto.com/image/k0082160/800wm/K0082160-The_sun_s_surface.jpg);
+        }
+        .earth,.moon
+        {
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+        }
+        .earth
+        {
+            top: 5em;
+            left: 5em;
+            width: 20em;
+            height: 20em;
+            animation: orbit 36.5s linear infinite;
+        }
+        .moon
+        {
+            top:0em;                                  
+            right: 0em;
+            left: 15em;
+            width: 5em;
+            height: 5em;
+            animation: orbit 3s linear infinite;
+        }
+        .earth::before,
+        .moon::before
+        {
+            content:'';
+            position: absolute;
+            border-radius: 50%;
+        }
+        .earth::before
+        {
+            top: 2em;
+            right: 1.5em;
+            width: 2em;
+            height: 2em;
+            background-color: aqua;
+            box-shadow: 0 0 3em lime;
+
+        }
+        .moon::before
+        {
+            top: 0.4em;
+            right: 0.1em;
+            height: 1em;
+            width: 1em;
+            background-color: silver;
+        }
+        .mars
+        {
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+            top: 5em;                                      
+            left: 5em;
+            width: 30em;
+            height: 30em;
+            animation: orbit 30s linear infinite;
+        }
+        
+        .mars::before
+        {
+            top: 3em;
+            right: 2.8em;
+            width: 3em;
+            height: 3em;
+            background-color: rgb(183, 65, 47);
+            box-shadow: 0 0 3em rgb(213, 39, 216);
+            content:'';
+            position: absolute;
+            border-radius: 50px;
+        }
+        .jupiter
+        {
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+            top: 9px;
+            left: 9px;
+            height: 640px;
+            width: 640px;
+            animation: orbit 36s linear infinite;
+        }
+        .jupiter::before
+        {
+            position: absolute;
+            top: 4em;
+            right: 4em;
+            width: 4em;
+            height: 4em;
+            background-color: rgb(199, 154, 120);
+            content: '';
+            border-radius: 50%;
+            box-shadow: 0 0 3em white;
+        }
+        @keyframes orbit
+        {
+            to
+            {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sun"> </div>
+
+        <div class="jupiter">
+            <div class="mars">
+                <div class="earth">
+                    <div class="moon"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
