@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Solar System</title>
+    <link rel="icon" href="https://img.freepik.com/free-vector/solar-system-illustration_1284-8563.jpg?t=st=1736246759~exp=1736250359~hmac=c23c029aa60a4aaa517a0d6e6b3c62ad0effd8e239e74cb674b1ad27fe858c4e&w=740">
+    <title>jitu's Solar System</title>
     <style>
         body
         {
@@ -15,7 +15,10 @@
             justify-content: center;
             background-color: black;
             overflow: hidden;
-            background-image: url(https://wallpaperaccess.com/full/4037643.jpg);
+            background-repeat: no-repeat;
+            background-image: url(https://img.freepik.com/free-photo/space-background-realistic-starry-night-cosmos-shining-stars-milky-way-stardust-color-galaxy_1258-154750.jpg?t=st=1736244805~exp=1736248405~hmac=0529c8cd4eee0279897857d1547933762396165740fd29a07c66b6e8e5880e6a&w=996);
+            background-size: cover;
+            background-position: center;
         }
         .container
         {
@@ -30,10 +33,10 @@
             left: 15em;
             width: 10em;
             height: 10em;
-            background-color: yellow;
             border-radius: 50%;
-            box-shadow: 0 0 7em white;
-            background-image: url(https://media.sciencephoto.com/image/k0082160/800wm/K0082160-The_sun_s_surface.jpg);
+            box-shadow: 0 0 100px 40px yellow;
+            background: linear-gradient(135deg, red, yellow);
+            /* background-image: url(https://media.sciencephoto.com/image/k0082160/800wm/K0082160-The_sun_s_surface.jpg); */
         }
         .earth,.moon
         {
@@ -75,7 +78,8 @@
             height: 2em;
             background-color: aqua;
             box-shadow: 0 0 3em lime;
-
+            background-image: url(https://img.freepik.com/free-psd/earth-ball-planet-isolated_23-2151806121.jpg?uid=R180801392&ga=GA1.1.1285227054.1735319231&semt=ais_hybrid);
+            background-size: cover;
         }
         .moon::before
         {
@@ -84,6 +88,8 @@
             height: 1em;
             width: 1em;
             background-color: silver;
+            background-image: url(https://img.freepik.com/free-photo/beautiful-glowing-gray-full-moon_181624-59870.jpg?t=st=1736245959~exp=1736249559~hmac=1a164eeac54b259ddcc029b8fedebd0f02d8fb6736e9e997885ca01393a7bfca&w=740);
+            background-size: cover;
         }
         .mars
         {
@@ -110,6 +116,9 @@
             content:'';
             position: absolute;
             border-radius: 50px;
+            background-image: url(https://www.outerspaceuniverse.org/wp-content/uploads/planet-mars.jpg);
+            background-size: cover;
+            background-position: center;
         }
         .jupiter
         {
@@ -123,6 +132,7 @@
             height: 640px;
             width: 640px;
             animation: orbit 36s linear infinite;
+            
         }
         .jupiter::before
         {
@@ -135,6 +145,9 @@
             content: '';
             border-radius: 50%;
             box-shadow: 0 0 3em white;
+            background-image: url(https://img.freepik.com/free-psd/jupiter-celestial-marble-swirling-hues-cosmic-mysteries_632498-24728.jpg?t=st=1736246286~exp=1736249886~hmac=790d7440bb3e5e759e8dea6f84cb8d5d44d9e23e3a6b701ac1077594103abff7&w=740);
+            background-size: 130%;
+            background-position: center;
         }
         @keyframes orbit
         {
